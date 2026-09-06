@@ -1,517 +1,535 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HAJI SALMAN</title>
-
-<meta name="description" content="Join King of Nifty for free daily Nifty & BankNifty analysis.">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,Segoe UI,sans-serif;
-    background:#f7f9fc;
-    color:#151525;
-}
-
-.container{
-    width:100%;
-    max-width:440px;
-    margin:auto;
-    padding:22px 10px;
-    text-align:center;
-}
-
-
-/* Online Bar */
-
-.online{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    background:#e8f5e9;
-    color:#218739;
-    padding:6px 14px;
-    border-radius:30px;
-    font-size:11px;
-    font-weight:bold;
-}
-
-.dot{
-    width:7px;
-    height:7px;
-    background:#22c55e;
-    border-radius:50%;
-}
-
-
-/* Profile */
-
-.profile{
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    margin:18px auto 8px;
-    overflow:hidden;
-    border:3px solid white;
-    box-shadow:0 4px 15px #ddd;
-}
-
-.profile img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-
-/* Title */
-
-h1{
-    font-size:20px;
-    margin:8px 0 3px;
-    font-weight:800;
-}
-
-.tag{
-    color:#0066ff;
-    font-weight:bold;
-    font-size:12px;
-}
-
-
-/* Rating */
-
-.rating{
-    margin:10px;
-    color:#ff9800;
-    font-size:16px;
-}
-
-.rating small{
-    color:#777;
-    font-size:11px;
-}
-
-
-/* Buttons */
-
-.btn{
-    position:relative;
-    display:block;
-
-    width:100%;
-    max-width:420px;
-
-    margin:14px auto;
-
-    overflow:hidden;
-
-    background:linear-gradient(
-        135deg,
-        #0066ff,
-        #004dcc
-    );
-
-    color:white;
-
-    padding:18px 8px;
-
-    border-radius:11px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-    font-size:13px;
-
-    white-space:nowrap;
-
-    box-shadow:
-        0 4px 12px #b8d0ff;
-}
-
-
-/* Sliding Light */
-
-.btn::after{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-100%;
-
-    width:45%;
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.75),
-        transparent
-    );
-
-    transform:skewX(-20deg);
-
-    animation:buttonLight 2s infinite;
-}
-
-@keyframes buttonLight{
-
-    0%{
-        left:-100%;
-    }
-
-    45%{
-        left:120%;
-    }
-
-    100%{
-        left:120%;
-    }
-
-}
-
-
-/* Stats */
-
-.stats{
-    display:flex;
-    gap:7px;
-    margin:14px 0;
-}
-
-.card{
-    flex:1;
-    background:white;
-    padding:11px 4px;
-    border-radius:11px;
-    box-shadow:0 2px 7px #eee;
-    font-size:11px;
-}
-
-.number{
-    color:#0066ff;
-    font-size:17px;
-    font-weight:bold;
-    margin-bottom:2px;
-}
-
-
-/* Content */
-
-.heading{
-    font-size:15px;
-    font-weight:bold;
-    line-height:1.4;
-}
-
-.heading span{
-    color:#0066ff;
-}
-
-.sub{
-    color:#777;
-    margin:7px;
-    font-size:11px;
-}
-
-
-/* Alert */
-
-.alert{
-    background:#fff3e0;
-    color:#e65100;
-    padding:9px;
-    border-radius:25px;
-    font-size:11px;
-    font-weight:bold;
-    margin:13px 0;
-}
-
-
-/* Features */
-
-.feature{
-    background:white;
-    padding:11px;
-    margin:7px 0;
-    border-radius:10px;
-
-    text-align:left;
-
-    display:flex;
-    gap:9px;
-    align-items:center;
-
-    box-shadow:0 2px 6px #eee;
-
-    font-size:12px;
-}
-
-.icon{
-    font-size:18px;
-}
-
-
-/* Footer */
-
-.ads{
-    margin-top:22px;
-    padding:13px;
-    border-top:1px solid #ddd;
-    font-size:11px;
-    color:#777;
-}
-
-.ads a{
-    color:#0066ff;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-.disclaimer{
-    margin-top:14px;
-    font-size:9px;
-    color:#999;
-    line-height:1.4;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HAJI SALMAN MEMON</title>
+    <meta name="description" content="Join King of Nifty by HAJI SALMAN MEMON for free daily analysis, Nifty & BankNifty levels, and expert stock market education.">
+    <meta name="keywords" content="King of Nifty, HAJI SALMAN MEMON, Nifty Prediction, BankNifty Analysis, Stock Market India, Free Trading Calls">
+
+    <meta property="og:title" content="KING OF NIFTY - HAJI SALMAN MEMON">
+    <meta property="og:description" content="Join 50,000+ traders for FREE daily calls.">
+    <meta property="og:image" content="IMAGE_URL_HERE">
+    <meta property="og:url" content="https://t.me/+HUx4p6JruRwzMGY1">
+    <meta property="og:type" content="website">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2084691478925649');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2084691478925649&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI',Arial,sans-serif;
+            background:#f8f9fa;
+            color:#1a1a2e;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+        }
+
+        .container{
+            max-width:460px;
+            width:100%;
+            padding:40px 16px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .top-bar{
+            background:#e8f5e9;
+            color:#2e7d32;
+            font-weight:600;
+            font-size:13px;
+            padding:8px 24px;
+            border-radius:50px;
+            margin-bottom:28px;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        }
+
+        .top-bar span{
+            width:8px;
+            height:8px;
+            background:#2e7d32;
+            border-radius:50%;
+            animation:blink 1.2s infinite;
+        }
+
+        @keyframes blink{
+            0%,100%{opacity:1}
+            50%{opacity:.3}
+        }
+
+        .avatar{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:linear-gradient(135deg,#0066ff,#00c6ff);
+            margin-bottom:6px;
+            position:relative;
+            border:4px solid #fff;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1);
+            overflow:hidden;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .avatar img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .badge{
+            position:absolute;
+            bottom:5px;
+            right:5px;
+            width:26px;
+            height:26px;
+            background:#0066ff;
+            border:3px solid #f8f9fa;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#fff;
+            font-size:12px;
+            z-index:2;
+        }
+
+        .name{
+            font-size:22px;
+            font-weight:800;
+            text-align:center;
+            margin:12px 0 4px;
+            color:#1a1a2e;
+        }
+
+        .tagline{
+            color:#0066ff;
+            font-size:13px;
+            font-weight:600;
+            margin-bottom:6px;
+        }
+
+        .rating{
+            display:flex;
+            align-items:center;
+            gap:3px;
+            margin-bottom:20px;
+        }
+
+        .rating b{
+            color:#ff9800;
+            font-size:16px;
+        }
+
+        .rating small{
+            color:#888;
+            font-size:12px;
+            margin-left:4px;
+        }
+
+        .btn-top{
+            display:block;
+            width:100%;
+            max-width:380px;
+            background:linear-gradient(135deg,#0066ff,#0052cc);
+            color:#fff;
+            font-weight:700;
+            font-size:16px;
+            padding:14px;
+            border-radius:14px;
+            text-align:center;
+            text-decoration:none;
+            margin-bottom:24px;
+            box-shadow:0 4px 14px rgba(0,102,255,.3);
+            transition:transform .15s,box-shadow .15s;
+        }
+
+        .btn-top:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 20px rgba(0,102,255,.4);
+        }
+
+        .stats{
+            display:flex;
+            gap:10px;
+            margin-bottom:28px;
+            width:100%;
+            max-width:380px;
+        }
+
+        .stat{
+            flex:1;
+            background:#fff;
+            border-radius:14px;
+            padding:14px 8px;
+            text-align:center;
+            box-shadow:0 2px 8px rgba(0,0,0,.06);
+        }
+
+        .stat-num{
+            font-size:18px;
+            font-weight:800;
+            color:#0066ff;
+        }
+
+        .stat-lbl{
+            font-size:11px;
+            color:#888;
+            margin-top:2px;
+        }
+
+        .pitch{
+            font-size:16px;
+            font-weight:700;
+            text-align:center;
+            line-height:1.5;
+            margin-bottom:6px;
+            color:#1a1a2e;
+        }
+
+        .pitch span{
+            color:#0066ff;
+        }
+
+        .sub{
+            color:#888;
+            font-size:13px;
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .urgency{
+            background:#fff3e0;
+            border-radius:50px;
+            padding:10px 24px;
+            display:flex;
+            align-items:center;
+            gap:8px;
+            margin-bottom:20px;
+            font-size:13px;
+            font-weight:600;
+            color:#e65100;
+        }
+
+        .btn{
+            display:block;
+            width:100%;
+            max-width:380px;
+            background:linear-gradient(135deg,#0066ff,#0052cc);
+            color:#fff;
+            font-weight:700;
+            font-size:17px;
+            padding:16px;
+            border-radius:14px;
+            text-align:center;
+            text-decoration:none;
+            margin-bottom:20px;
+            box-shadow:0 4px 14px rgba(0,102,255,.3);
+            transition:transform .15s,box-shadow .15s;
+        }
+
+        .btn:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 20px rgba(0,102,255,.4);
+        }
+
+        .features{
+            width:100%;
+            max-width:380px;
+            margin-bottom:20px;
+        }
+
+        .feat{
+            background:#fff;
+            border-radius:12px;
+            padding:14px 18px;
+            margin-bottom:8px;
+            display:flex;
+            align-items:center;
+            gap:12px;
+            box-shadow:0 1px 4px rgba(0,0,0,.04);
+        }
+
+        .feat-icon{
+            width:32px;
+            height:32px;
+            background:#e3f2fd;
+            border-radius:8px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:16px;
+            flex-shrink:0;
+        }
+
+        .feat-text{
+            font-size:13px;
+            font-weight:600;
+            color:#1a1a2e;
+        }
+
+        .trust{
+            display:flex;
+            align-items:center;
+            gap:8px;
+            margin-bottom:20px;
+            font-size:12px;
+            color:#888;
+        }
+
+        .trust b{
+            color:#2e7d32;
+        }
+
+        .btn2{
+            display:block;
+            width:100%;
+            max-width:380px;
+            background:#1a1a2e;
+            color:#fff;
+            font-weight:700;
+            font-size:16px;
+            padding:14px;
+            border-radius:14px;
+            text-align:center;
+            text-decoration:none;
+            margin-bottom:8px;
+            transition:opacity .2s;
+        }
+
+        .btn2:hover{
+            opacity:.9;
+        }
+
+        .free-tag{
+            color:#0066ff;
+            font-size:12px;
+            font-weight:600;
+            margin-bottom:28px;
+        }
+
+        .disc{
+            max-width:380px;
+            text-align:center;
+            color:#aaa;
+            font-size:10px;
+            line-height:1.6;
+            padding-top:20px;
+            border-top:1px solid #eee;
+        }
+
+        /* ADB Agency Footer */
+        .agency-footer{
+            margin-top:22px;
+            padding-top:16px;
+            border-top:1px solid #e5e5e5;
+            width:100%;
+            max-width:380px;
+            text-align:center;
+        }
+
+        .agency-footer a{
+            color:#0066ff;
+            text-decoration:none;
+            font-size:12px;
+            font-weight:700;
+            letter-spacing:.3px;
+        }
+
+        .agency-footer a:hover{
+            text-decoration:underline;
+        }
+
+        @media(max-width:380px){
+            .container{
+                padding:30px 12px;
+            }
+
+            .name{
+                font-size:20px;
+            }
+
+            .stats{
+                gap:7px;
+            }
+
+            .stat{
+                padding:12px 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- Online -->
-
-    <div class="online">
-        <span class="dot"></span>
-        5,947 Traders Online Now
+    <div class="top-bar">
+        <span></span> 5,947 traders online now
     </div>
 
-
-    <!-- Profile -->
-
-    <div class="profile">
-
+    <div class="avatar">
         <img
-        src="https://i.ibb.co/201nP7NS/rsi-TE622qd-Ynah-Cpd-Ka-E0-Opqrg8r-LJwe-ZS4gf-Ifgtq-fn-As-EEnp-QDm0dfi-Py7-EXBvrxz-Pamc8-VEghv-Ohx-EF9j.jpg"alt="Logo">
-
+            src="https://elegant-meringue-0f998a.netlify.app/WhatsApp%20Image%202026-07-21%20at%2011.25.10%20PM.jpeg"
+            alt="HAJI SALMAN MEMON"
+        >
+        <div class="badge">✓</div>
     </div>
 
+    <h1 class="name">HAJI SALMAN MEMON</h1>
 
-    <!-- Title -->
-
-    <h1>HAJI SALMAN</h1>
-
-    <div class="tag">
-        🏆 India's No.1 Stock Market Channel
-    </div>
-
-
-    <!-- Rating -->
+    <p class="tagline">🏆 India's No.1 Stock Market Channel</p>
 
     <div class="rating">
-
-        ★★★★★
-
-        <br>
-
-        <small>
-            4.9/5 (2340 Reviews)
-        </small>
-
+        <b>★★★★★</b>
+        <small>4.9/5 (2,340 reviews)</small>
     </div>
 
-
-    <!-- Button -->
-
     <a
-    class="btn"
-    href="https://t.me/+LWXxAaXrPDlkZmE1">
-
+        class="btn-top"
+        href="https://t.me/+LWXxAaXrPDlkZmE1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         Join Free Telegram Channel →
-
     </a>
-
-
-    <!-- Stats -->
 
     <div class="stats">
-
-        <div class="card">
-
-            <div class="number">
-                50K+
-            </div>
-
-            Members
-
+        <div class="stat">
+            <div class="stat-num">50K+</div>
+            <div class="stat-lbl">Members</div>
         </div>
 
-
-        <div class="card">
-
-            <div class="number">
-                5+
-            </div>
-
-            Years
-
+        <div class="stat">
+            <div class="stat-num">5+ Yrs</div>
+            <div class="stat-lbl">Experience</div>
         </div>
 
-
-        <div class="card">
-
-            <div class="number">
-                95%
-            </div>
-
-            Accuracy
-
+        <div class="stat">
+            <div class="stat-num">95%</div>
+            <div class="stat-lbl">Accuracy</div>
         </div>
-
     </div>
 
+    <p class="pitch">
+        Get <span>FREE daily calls</span> for NIFTY, BANKNIFTY & SENSEX
+    </p>
 
-    <!-- Content -->
+    <p class="sub">
+        Join thousands of traders getting free premium analysis daily
+    </p>
 
-    <div class="heading">
-
-        Get <span>FREE Daily Calls</span>
-
-        <br>
-
-        for NIFTY, BANKNIFTY & SENSEX
-
+    <div class="urgency">
+        🔥 7,589 people joined today — Limited FREE access!
     </div>
-
-
-    <div class="sub">
-
-        Join thousands of traders getting daily market analysis
-
-    </div>
-
-
-    <!-- Alert -->
-
-    <div class="alert">
-
-        🔥 Limited FREE Access Available
-
-    </div>
-
-
-    <!-- Features -->
-
-    <div class="feature">
-
-        <div class="icon">
-            📊
-        </div>
-
-        <div>
-            Daily Nifty & BankNifty Levels
-        </div>
-
-    </div>
-
-
-    <div class="feature">
-
-        <div class="icon">
-            🎓
-        </div>
-
-        <div>
-            Educational Market Analysis
-        </div>
-
-    </div>
-
-
-    <div class="feature">
-
-        <div class="icon">
-            👥
-        </div>
-
-        <div>
-            50,000+ Subscribers Community
-        </div>
-
-    </div>
-
-
-    <!-- Second Button -->
 
     <a
-    class="btn"
-    href="https://t.me/+LWXxAaXrPDlkZmE1">
-
+        class="btn"
+        href="https://t.me/+LWXxAaXrPDlkZmE1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         Join Free Telegram Channel →
-
     </a>
 
+    <div class="features">
 
-    <!-- Disclaimer -->
+        <div class="feat">
+            <div class="feat-icon">📊</div>
+            <span class="feat-text">
+                Daily Nifty & BankNifty Levels
+            </span>
+        </div>
 
-    <div class="disclaimer">
+        <div class="feat">
+            <div class="feat-icon">🎓</div>
+            <span class="feat-text">
+                No Paid Tips – Purely Educational
+            </span>
+        </div>
 
-        <strong>
-            Disclaimer:
-        </strong>
+        <div class="feat">
+            <div class="feat-icon">⏳</div>
+            <span class="feat-text">
+                5+ Years of Market Experience
+            </span>
+        </div>
 
-        <br>
-
-        This channel is for educational purposes only.
-        Trading involves market risk.
-        Please consult your financial advisor before making investment decisions.
+        <div class="feat">
+            <div class="feat-icon">👥</div>
+            <span class="feat-text">
+                50,000+ Subscribers Trust Us
+            </span>
+        </div>
 
     </div>
 
+    <div class="trust">
+        ✅ <b>Verified Channel</b> • Free Forever • No Spam
+    </div>
 
-    <!-- Footer -->
+    <a
+        class="btn2"
+        href="https://t.me/+LWXxAaXrPDlkZmE1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Join Now — It's 100% FREE
+    </a>
 
-    <div class="ads">
+    <p class="free-tag">⏰ Limited time offer</p>
 
-        🔥 Powered by
+    <div class="disc">
+        <strong>Disclaimer:</strong>
+        This channel is for educational and informational purposes only.
+        We do not provide investment advice or guaranteed returns.
+        Trading in the stock market involves risk.
+        Please consult your financial advisor before making any investment decisions.
+    </div>
 
-        <a href="https://t.me/+KMkMkqIAJvliMzM1">
-
-            ADB AGENCY
-
+    <!-- ADB AGENCY -->
+    <!-- Replace the Telegram URL below with your actual ADB Agency Telegram link -->
+    <div class="agency-footer">
+        <a
+            href="https://t.me/+KMkMkqIAJvliMzM1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Ad Manage by ADB AGENCY
         </a>
-
     </div>
 
 </div>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2084691478925649');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2084691478925649&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
 </body>
 </html>
